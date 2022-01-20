@@ -4,6 +4,48 @@
 
 [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods)
 
+### Truthy , Falsy
+
+```
+let tool = '';
+let tool = 'marker';
+
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let writingUtensil = tool || 'pen'; // left first then right
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+```
+
+### Ternary operator
+
+```
+let isNightTime = true;
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+```
+
+### switch
+
+```
+let groceryItem = 'papaya';
+ 
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+ 
+```
+
+
 ## Method 
 
 ### .forEach

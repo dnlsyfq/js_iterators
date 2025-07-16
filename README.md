@@ -92,6 +92,25 @@ const shortWords = words.filter(word => {
 });
 ```
 
+```
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter(n => {
+  return n < 250
+})
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(w => {
+  return w.length > 7
+})
+
+```
+
+
 ### .findIndex
 
 * to find the location of an element in an array
@@ -108,6 +127,27 @@ console.log(jumbledNums[lessThanTen]);
 ```
 
 > If there isn’t a single element in the array that satisfies the condition in the callback, then .findIndex() will return -1.
+
+```
+const greaterThan1000 = jumbledNums.findIndex(num => {
+  return num > 1000;
+});
+
+console.log(greaterThan1000); // Output: -1
+
+```
+
+```
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(a => {
+  return a === 'elephant'
+})
+
+const startsWithS = animals.findIndex(a => {
+  return a[0]==='s'
+})
+```
 
 ### .reduce
 * returns a single value after iterating through the elements of an array

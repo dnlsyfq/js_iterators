@@ -153,6 +153,16 @@ const startsWithS = animals.findIndex(a => {
 * returns a single value after iterating through the elements of an array
 
 ```
+
+const longCities = cities.filter(city => city.length > 7);
+
+// Choose a method that will return a single value
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+```
+
+```
 const numbers = [1,2,4,10];
 
 const summedNums = numbers.reduce((accumulator, currentValue) => {
